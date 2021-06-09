@@ -1,0 +1,101 @@
+
+<head>
+  <style>
+    
+    .center{
+      margin-left:auto;
+      margin-right:auto;
+      width:500px;
+    }
+    body{
+      text-align:center;
+      padding:110px 80px 50px 370px;
+    }
+    form{
+      display:inline-block;
+      flex-direction:column;
+      align-items:stretch;
+    }
+    .a{
+      width:500px;
+      border:3px solid black;
+      padding:50px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="a">
+<form #userForms="ngForm">
+  <table class="center">
+    <tr>
+     
+  <div class="form-group">
+     <td><label for="DistrictName">District Name</label> &nbsp; </td>
+     <td>&nbsp;<input required id="DistrictName" name="DistrictName" ngModel #DistrictName="ngModel"  type="text" class="form-control"></td>
+     
+  </div>
+</tr>
+  
+<tr>
+  <div class="form-group">
+      <td><label for="Area">Area (sq mt)</label>&nbsp; &nbsp; &nbsp;</td>
+    <td><input id="Area"  name="Area" ngModel #Area="ngModel" type="text" class="form-control"></td>
+  </div>
+</tr>
+<tr>
+  <div class="form-group">
+      <td><label for="Population">Population    </label>&nbsp; &nbsp; &nbsp; &emsp; </td>
+    <td>&nbsp;&nbsp;<input id="Population" name="Population" ngModel  #Population="ngModel"type="text" class="form-control"></td>
+  </div>
+</tr>
+<tr>
+  <div class="form-group">
+      <td><label for="Save"></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+    <td><button>Save</button></td>
+  </div>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+<div>
+  <fieldset>
+    <div>Biggest District (Area wise)</div><br>
+    <input   type="radio" id="Chennai" name="District">Chennai &nbsp;&nbsp;&nbsp;
+    <input   type="radio" id="Coimbatore" name="District" checked>Coimbatore&nbsp;&nbsp;
+    <input  type="radio" id="Salem" name="District">Salem&nbsp;&nbsp;
+  </fieldset>
+  </div>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+    <div>
+      <fieldset>
+        <div>Highly populated District</div><br>
+        <input type="radio" id="Chennai" name="DistrictPopulation" checked>Chennai &nbsp;&nbsp;&nbsp;
+        <input type="radio" id="Coimbatore" name="DistrictPopulation">Coimbatore&nbsp;&nbsp;
+        <input type="radio" id="Salem" name="DistrictPopulation">Salem&nbsp;&nbsp;
+      </fieldset>
+      </div>
+      </tr>
+</table>
+</form>
+</div>
+</body>
+
+
+
